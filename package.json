@@ -1,0 +1,45 @@
+{
+    "name": "softgames-assignment",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "My Softgames assignment",
+    "author": {
+        "name": "whizzkid",
+        "url": "https://github.com/whizzkid"
+    },
+    "scripts": {
+        "start": "npm run build-assets && vite --open --host",
+        "build": "npm run build-assets && vite build",
+        "build-assets": "assetpack",
+        "preview": "npm run build && vite preview --open",
+        "lint": "eslint --ext .js,.ts,.tsx src",
+        "lint:fix": "eslint --ext .js,.ts,.tsx src --fix",
+        "format": "prettier --write src/**/*.{ts}"
+    },
+    "devDependencies": {
+        "@assetpack/cli": "~0.3.4",
+        "@assetpack/core": "^0.7.0",
+        "@assetpack/plugin-compress": "~0.3.4",
+        "@assetpack/plugin-ffmpeg": "~0.3.4",
+        "@assetpack/plugin-json": "~0.3.4",
+        "@assetpack/plugin-manifest": "~0.3.4",
+        "@assetpack/plugin-mipmap": "~0.3.4",
+        "@assetpack/plugin-texture-packer": "~0.3.4",
+        "@assetpack/plugin-webfont": "~0.3.4",
+        "@ffmpeg-installer/ffmpeg": "^1.1.0",
+        "@pixi/sound": "^5.0.0",
+        "@pixi/ui": "^0.5.6",
+        "@typescript-eslint/eslint-plugin": "^5.49.0",
+        "@typescript-eslint/parser": "^5.49.0",
+        "eslint": "^8.32.0",
+        "eslint-plugin-simple-import-sort": "^10.0.0",
+        "gsap": "^3.12.2",
+        "pixi-filters": "^5.2.1",
+        "pixi-stats": "^1.2.2",
+        "pixi.js": "^7.3.1",
+        "prettier": "^2.8.3",
+        "typed-signals": "^2.5.0",
+        "typescript": "^4.9.3",
+        "vite": "^4.0.0"
+    }
+}
